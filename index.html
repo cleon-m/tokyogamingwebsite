@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>TOKYO GAMING</title>
+</head>
+<body>
+    <div class="rain"></div>
+  <header>
+    <h1 class="fade-scroll" style="font-family: pixel; font-size: 15rem;">TOKYO</h1>
+    <p class="fade-scroll" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-style: oblique; opacity: 20%;">the fine line between gaming and fashion; embodied</p>
+  </header>
+  
+  <section>
+    <h2 class="fade-scroll">DOMINATE THE BATTLEFIELD</h2>
+    <p class="fade-scroll">Step into the battlefield, turning heads and using those to destroy your opponents! With unmatched passion, TOKYO Gaming presents to you our brand-new merch!</p>
+    <section class="features"><br><br><br><br><br><br>
+  <h2 class="fade-scroll">WHY WE'RE THE BEST</h2> 
+  <div class="feature-grid">
+    <div class="feature-card fade-scroll">
+      <img src="pages/pictures/accessibility.png" alt="Compatibility Icon" class="feature-icon">
+      <h3>COMPATIBILITY</h3>
+      <p>Wearing jeans, sweats, or shorts? Doesn't matter.</p>
+      <ul>
+        <li>Unlimited outfit combos</li>
+        <li>Seamless transitions</li>
+        <li>No performance dips</li>
+        <li>Easy to layer & match</li>
+      </ul>
+    </div>
+    <div class="feature-card fade-scroll">
+      <img src="pages/pictures/comfort.png" alt="Comfort Icon" class="feature-icon" style="width: 100px; height: 100px;">
+      <h3>COMFORT</h3>
+      <p>Built from scratch just for you gamers... or comfort seekers.</p>
+      <ul>
+        <li>Breathable</li>
+        <li>Tailored for movement</li>
+      </ul>
+    </div>
+    <div class="feature-card fade-scroll">
+      <img src="pages/pictures/support.png" alt="Support Icon" class="feature-icon">
+      <h3>24/7 PREMIUM SUPPORT</h3>
+      <p>Need help with sizing, styling, or shipping? Our team is always online.</p>
+    </div>
+    <br>
+</section>
+    <a href="pages/mainpage.html" class="btn fade-scroll">Buy Merch</a>
+  </section>
+
+
+  <script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      } else {
+        entry.target.classList.remove('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-scroll').forEach(el => observer.observe(el));
+</script>
+  <script>
+  (function () {
+    const rainContainer = document.querySelector('.rain');
+    const DROPS = 150;
+    const vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+    const vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+    for (let i = 0; i < DROPS; i++) {
+      const d = document.createElement('div');
+      d.className = 'drop';
+      d.style.left = Math.random() * vw + 'px';
+      d.style.top = -Math.random() * vh + 'px';
+      d.style.height = (12 + Math.random() * 18) + 'px'; 
+      d.style.animationDuration = (0.8 + Math.random() * 1.2) + 's';
+      d.style.animationDelay = (Math.random() * 2) + 's';
+      rainContainer.appendChild(d);
+    }
+    window.addEventListener('resize', () => {
+      rainContainer.innerHTML = '';
+      const vw2 = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+      const vh2 = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+      for (let i = 0; i < DROPS; i++) {
+        const d = document.createElement('div');
+        d.className = 'drop';
+        d.style.left = Math.random() * vw2 + 'px';
+        d.style.top = -Math.random() * vh2 + 'px';
+        d.style.height = (12 + Math.random() * 18) + 'px';
+        d.style.animationDuration = (0.8 + Math.random() * 1.2) + 's';
+        d.style.animationDelay = (Math.random() * 2) + 's';
+        rainContainer.appendChild(d);
+      }
+    });
+  })();
+</script>
+</body>
+</html>
