@@ -229,4 +229,5 @@ header, section, footer {
   0%   { top: -20px; opacity: 0; }
   10%  { opacity: 1; }
   100% { top: 110vh; opacity: 0; }
+
 }
