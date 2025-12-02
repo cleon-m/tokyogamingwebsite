@@ -29,18 +29,15 @@
             <span>FOLLOW — SUBSCRIBE — LIKE —</span>
             <span>FOLLOW — SUBSCRIBE — LIKE —</span>
             <span>FOLLOW — SUBSCRIBE — LIKE —</span>
-        
         </div>
     </div>
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
         <div class="container">
-            <a href="mainpage.html">
             <a class="navbar-brand fw-bold" href="../index.html" style="font-family: pixel;">TOKYO N KINGS</a>
-            </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -55,13 +52,51 @@
         </div>
     </nav>
 
-    <!-- PRODUCT GRID -->
+
     <section id="products" class="container py-5">
+        <div id="galleryCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="pictures\FIngersleeves.jpg" class="d-block w-100" alt="Gallery Image 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Finger Sleeves</h5>
+                        <p>Comfortable and stylish.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="pictures\Beanie.jpg" class="d-block w-100" alt="Gallery Image 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Beanie</h5>
+                        <p>Keep warm with style.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="pictures\TokyoShirt.jpg" class="d-block w-100" alt="Gallery Image 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Tokyo Shirt</h5>
+                        <p>Show your Tokyo pride.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
         <h2 class="fw-bold mb-4">TOKYO MERCH</h2>
 
         <div class="row g-4">
-
-            <!-- PRODUCT CARD Finger Sleeves--> 
+            <!-- PRODUCT CARD Finger Sleeves-->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="card product-card">
                     <div class="image-wrapper">
@@ -72,7 +107,7 @@
                         <h5 class="card-title" style="font-family: pixel;">Finger Sleeves</h5>
                         <p class="card-text fw-bold">₱129</p>
                         <a href="fingersleeves.html">
-                        <button class="btn btn-dark w-100">Buy</button>
+                            <button class="btn btn-dark w-100">Buy</button>
                         </a>
                     </div>
                 </div>
@@ -86,10 +121,10 @@
                         <img src="pictures\Beaniecover.png" class="hover-img" alt="product worn" />
                     </div>
                     <div class="card-body text-center">
-                        <h5 class="card-title"style="font-family: pixel;">Beanie</h5>
+                        <h5 class="card-title" style="font-family: pixel;">Beanie</h5>
                         <p class="card-text fw-bold">₱240</p>
                         <a href="beanie.html">
-                        <button class="btn btn-dark w-100">Buy</button>
+                            <button class="btn btn-dark w-100">Buy</button>
                         </a>
                     </div>
                 </div>
@@ -103,82 +138,75 @@
                         <img src="pictures\TokyoShirtCovered.jpg" class="hover-img" alt="product worn" />
                     </div>
                     <div class="card-body text-center">
-                        <h5 class="card-title"style="font-family: pixel;">Tokyo Shirt</h5>
+                        <h5 class="card-title" style="font-family: pixel;">Tokyo Shirt</h5>
                         <p class="card-text fw-bold">₱300</p>
                         <a href="tokyoshirt.html">
-                        <button class="btn btn-dark w-100">Buy</button>
+                            <button class="btn btn-dark w-100">Buy</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="fw-bold mb-4 mt-5">4 KINGS COLLABORATION MERCH</h2>
+
+        <div class="row g-4">
+            <!-- PRODUCT CARD 4Kings Jersey -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card product-card">
+                    <div class="image-wrapper">
+                        <img src="pictures\4KingsJersey.jpg" class="main-img" alt="product" />
+                        <img src="pictures\4KingsJerseyCovered.jpg" class="hover-img" alt="product worn" />
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title" style="font-family: pixel;">4 Kings Jersey</h5>
+                        <p class="card-text fw-bold">₱450</p>
+                        <a href="4kingsjersey.html">
+                            <button class="btn btn-dark w-100">Buy</button>
                         </a>
                     </div>
                 </div>
             </div>
 
-        </div>
-
-        
-        <h2 class="fw-bold mb-4 mt-5">4 KINGS COLLABORATION MERCH</h2>
-
-<div class="row g-4">
-
-    <!-- PRODUCT CARD 4Kings Jersey -->
-    <div class="col-6 col-md-4 col-lg-3">
-        <div class="card product-card">
-            <div class="image-wrapper">
-                <img src="pictures\4KingsJersey.jpg" class="main-img" alt="product" />
-                <img src="pictures\4KingsJerseyCovered.jpg" class="hover-img" alt="product worn" />
-            </div>
-            <div class="card-body text-center">
-                <h5 class="card-title" style="font-family: pixel;">4 Kings Jersey</h5>
-                <p class="card-text fw-bold">₱450</p>
-                        <a href="4kingsjersey.html">
-                        <button class="btn btn-dark w-100">Buy</button>
-                        </a>
-            </div>
-        </div>
-    </div>
-
-    <!-- PRODUCT CARD 4Kings shirt -->
-    <div class="col-6 col-md-4 col-lg-3">
-        <div class="card product-card">
-            <div class="image-wrapper">
-                <img src="pictures\4KingsShirt.jpg" class="main-img" alt="product" />
-                <img src="pictures\4KingsShirtCover.jpg" class="hover-img" alt="product worn" />
-            </div>
-            <div class="card-body text-center">
-                <h5 class="card-title" style="font-family: pixel;" >4 Kings Shirt</h5>
-                <p class="card-text fw-bold">₱350</p>
+            <!-- PRODUCT CARD 4Kings shirt -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card product-card">
+                    <div class="image-wrapper">
+                        <img src="pictures\4KingsShirt.jpg" class="main-img" alt="product" />
+                        <img src="pictures\4KingsShirtCover.jpg" class="hover-img" alt="product worn" />
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title" style="font-family: pixel;">4 Kings Shirt</h5>
+                        <p class="card-text fw-bold">₱350</p>
                         <a href="4kingsshirt.html">
-                        <button class="btn btn-dark w-100">Buy</button>
+                            <button class="btn btn-dark w-100">Buy</button>
                         </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT CARD 4Kings Red Shirt -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card product-card">
+                    <div class="image-wrapper">
+                        <img src="pictures\4KingsRedShirt.jpg" class="main-img" alt="product" />
+                        <img src="pictures\4kingsredcover.png" class="hover-img" alt="product worn" />
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title" style="font-family: pixel;">4 Kings Red Shirt</h5>
+                        <p class="card-text fw-bold">₱500</p>
+                        <a href="4kingsredshirt.html">
+                            <button class="btn btn-dark w-100">Buy</button>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-
-    <!-- PRODUCT CARD 4Kings Red Shirt -->
-    <div class="col-6 col-md-4 col-lg-3">
-        <div class="card product-card">
-            <div class="image-wrapper">
-                <img src="pictures\4KingsRedShirt.jpg" class="main-img" alt="product" />
-                <img src="pictures\4kingsredcover.png" class="hover-img" alt="product worn" />
-            </div>
-            <div class="card-body text-center">
-                <h5 class="card-title" style="font-family: pixel;" >4 Kings Red Shirt</h5>
-                <p class="card-text fw-bold">₱500</p>
-                <a href="4kingsredshirt.html">
-                <button class="btn btn-dark w-100">Buy</button>
-                </a>
-            </div>
-        </div>
-    </div>
-
-</div>
     </section>
-
-    
 
     <!-- FOOTER -->
     <footer class="footer">
         <div class="footer-container">
-
             <!-- LEFT -->
             <div class="footer-col">
                 <h4>SITEMAP</h4>
@@ -207,12 +235,10 @@
                 <input type="text" placeholder="Last name..." />
                 <button>Send</button>
             </div>
-
         </div>
     </footer>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-
-
