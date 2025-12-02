@@ -146,7 +146,7 @@
       margin: 0 auto;
       object-fit: contain;
       border: 4px solid rgb(117, 117, 117);
-      border-radius: 60px;
+      border-radius: 32px;
   }
   
   
@@ -258,4 +258,5 @@
         max-height: 400px;
     }
 }
+
 
