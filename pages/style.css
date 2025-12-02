@@ -19,6 +19,17 @@
     z-index: 9999;
     background: #000 !important;
   }
+.page-number {
+    color: #bbb;
+    font-size: 14px;
+    transition: 0.3s;
+    cursor: default;
+}
+
+.page-number:hover {
+    color: white;
+    text-shadow: 0 0 8px white;
+}
   
   .navbar a {
     color: white !important;
@@ -247,3 +258,4 @@
         max-height: 400px;
     }
 }
+
