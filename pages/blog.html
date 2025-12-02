@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tokyo N Kings — Blog</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+        body {
+            padding-top: 120px;
+            background: #111;
+            color: #fff;
+        }
+        .navbar {
+            position: fixed;
+            top: 35px;
+            left: 0;
+            width: 100%;
+            z-index: 9999;
+            background: #000 !important;
+        }
+        .navbar a {
+            color: white !important;
+        }
+        /* Ticker */
+        .ticker-bar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: black;
+            color: white;
+            overflow: hidden;
+            white-space: nowrap;
+            z-index: 10000;
+            height: 35px;
+            display: flex;
+            align-items: center;
+        }
+        .ticker-track {
+            display: inline-flex;
+            gap: 50px;
+            animation: ticker 15s linear infinite;
+            padding-left: 100%;
+        }
+        @keyframes ticker {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        /* Blog */
+        .blog-post {
+            background: #1a1a1a;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            transition: 0.3s ease;
+        }
+        .blog-post:hover {
+            transform: translateY(-6px);
+            background: #222;
+        }
+        .blog-post img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .blog-post h3 {
+            color: #ff4d4d;
+        }
+
+        /* Footer */
+        footer.footer {
+            background: #0d0d0d;
+            padding: 40px 60px;
+            color: white;
+        }
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+        }
+        .footer-col a {
+            color: #bbb;
+            text-decoration: none;
+        }
+        .page-number {
+            color: #bbb;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Ticker -->
+<div class="ticker-bar">
+    <div class="ticker-track">
+        <span>FOLLOW — SUBSCRIBE — LIKE —</span>
+        <span>FOLLOW — SUBSCRIBE — LIKE —</span>
+        <span>FOLLOW — SUBSCRIBE — LIKE —</span>
+    </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+    <div class="container">
+        <a class="navbar-brand fw-bold">TOKYO N KINGS</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#products">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                <li class="nav-item"><a class="nav-link active" href="#">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Lookback</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- BLOG SECTION -->
+<section class="container py-5">
+    <h2 class="fw-bold mb-4">Latest Blogs</h2>
+
+    <!-- Post 1 -->
+    <div class="blog-post">
+        <img src="TokyoShirt.jpg" alt="Tokyo Merch Blog">
+        <h3>Behind the Design: The New Tokyo Shirt</h3>
+        <p>
+            Every Tokyo shirt starts with inspiration from streetwear, anime culture, and the raw energy 
+            of competitive gaming. In this blog, we break down how the design came together and what 
+            makes this drop special.
+        </p>
+        <a href="#" class="btn btn-danger mt-2">Read More</a>
+    </div>
+
+    <!-- Post 2 -->
+    <div class="blog-post">
+        <img src="4KingsJersey.jpg" alt="4 Kings Merch">
+        <h3>4 Kings Collaboration — How It Happened</h3>
+        <p>
+            This collaboration started as a dream project. Tokyo Gaming and 4 Kings teamed up to bring 
+            unique apparel that represents both community and competition.
+        </p>
+        <a href="#" class="btn btn-danger mt-2">Read More</a>
+    </div>
+
+    <!-- Post 3 -->
+    <div class="blog-post">
+        <img src="Beanie.jpg" alt="Tokyo Beanie">
+        <h3>Why Beanies Became a Community Favorite</h3>
+        <p>
+            From casual wear to esports events, our Tokyo beanie has become one of the most-loved 
+            accessories. Here's what makes it stand out.
+        </p>
+        <a href="#" class="btn btn-danger mt-2">Read More</a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-col">
+            <h4>Contact Us:</h4>
+            +63 ### ### ####
+        </div>
+
+        <div class="footer-col">
+            <h4>Socials</h4>
+            <a href="https://www.facebook.com/PH.TokyoGaming" target="_blank">Tokyo Gaming</a><br>
+            <a href="https://www.youtube.com/@tokyogamingph21" target="_blank">Tokyo Gaming YouTube</a><br>
+            <a href="https://www.facebook.com/4KingsPHOfficial" target="_blank">4 Kings Official</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Business Inquiries</h4>
+            <input type="email" placeholder="Email..." />
+            <input type="text" placeholder="First name..." />
+            <input type="text" placeholder="Last name..." />
+            <button>Send</button>
+        </div>
+    </div>
+
+    <div class="page-number text-center mt-4">
+        <h5>Page 1 of 1</h5>
+    </div>
+</footer>
+
+</body>
+</html>

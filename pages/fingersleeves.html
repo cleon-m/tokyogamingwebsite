@@ -10,9 +10,161 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
+    <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 120px;
+  background: #111;
+  color: #fff;
+}
+
+/* NAVBAR FIXED */
+.navbar {
+  position: fixed;
+  top: 35px;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background: #000 !important;
+}
+
+.navbar a {
+  color: white !important;
+}
+
+/* TICKER */
+.ticker-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: black;
+  color: white;
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: 10000;
+  height: 35px;
+  display: flex;
+  align-items: center;
+}
+
+.ticker-track {
+  display: inline-flex;
+  gap: 50px;
+  animation: ticker 15s linear infinite;
+  padding-left: 100%;
+}
+
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* PRODUCT CARD */
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.25s ease;
+  display: block;
+}
+
+.hover-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.product-card:hover .hover-img { opacity: 1; }
+.product-card:hover .main-img { opacity: 0; }
+
+.product-card {
+  border: none;
+  background: #222;
+  color: white;
+  transition: 0.2s;
+  border-radius: 8px;
+}
+
+.product-card:hover { transform: translateY(-5px); }
+
+/* FOOTER */
+footer.footer {
+  background: #0d0d0d;
+  padding: 40px 60px;
+  color: white;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-col a {
+  color: #bbb;
+  margin-bottom: 8px;
+  text-decoration: none;
+}
+
+.footer-col input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #555;
+  background: #222;
+  color: white;
+}
+
+.footer-col button {
+  background: black;
+  color: white;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.carousel-item img {
+    max-height: 350px;
+    width: auto;
+    margin: 0 auto;
+    object-fit: contain;
+    border: 4px solid rgb(117, 117, 117); /* border around the image */
+    border-radius: 60px; /* optional: smooth corners */
+}
+
+/* Move arrows closer to the image */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 60%; /* reduces distance from the center */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 70%;
+}
+</style>
 </head>
 <body>
-
+<a href="mainpage.html" class="btn btn-dark btn-sm">← Go Back</a>
     <!-- TOP TICKER BAR -->
     <div id="tickerBar" class="ticker-bar">
         <div class="ticker-track">
@@ -37,7 +189,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
         <div class="container">
             <a href="mainpage.html">
-            <a class="navbar-brand fw-bold" href="../index.html">TOKYO N KINGS</a>
+            <a class="navbar-brand fw-bold" href="#">TOKYO N KINGS</a>
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
@@ -46,7 +198,7 @@
 
             <div class="collapse navbar-collapse" id="navMenu">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="mainpage.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
@@ -63,10 +215,10 @@
 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="pictures/FIngersleeves.jpg" class="d-block w-50 mx-auto" style="max-height: 350px; object-fit: contain;" alt="1">
+      <img src="FIngersleeves.jpg" class="d-block w-50 mx-auto" style="max-height: 350px; object-fit: contain;" alt="1">
     </div>
     <div class="carousel-item">
-      <img src="pictures/sleevescover.png" class="d-block w-50 mx-auto" style="max-height: 350px; object-fit: contain;" alt="2">
+      <img src="sleevescover.png" class="d-block w-50 mx-auto" style="max-height: 350px; object-fit: contain;" alt="2">
     </div>
   </div>
 
